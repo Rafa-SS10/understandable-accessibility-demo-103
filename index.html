@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html lang="en_us">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Rusty Brown's Donuts</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body onload="alert('Welcome!')">
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="/">Login</a></li>
-      </ul>
-    </nav>
-    <div class="layout">
-      <main class="login-container">
-        <h1>Rusty Brown's</h1>
-        <img src="assets/logo.webp" alt="Rusty Brown's Logo" class="logo" />
-        <h2 class="tagline">Please login.</h2>
+<html lang="en">
 
-        <form action="/login" method="post" class="login-form">
-          <input id="email" name="u" type="text" placeholder="username" />
-          <input id="username" name="username" placeholder="type username again" />
-          <input
-            id="tok"
-            name="t"
-            type="password"
-            placeholder="Secret Cipher"
-          />
-        </form>
-        <button class="submitBtn"><a href="/pages/about.html">Start</a></button>
+<head>
+  <meta charset="UTF-8" />
+  <title>Rusty Brown's Donuts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <p class="disclaimer">
-          You will be logged out after 24 hours of inactivity.
-        </p>
-      </main>
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="/pages/about.html">About</a></li>
+      <li><a href="/">Login</a></li>
+    </ul>
+  </nav>
+  <div class="layout">
+    <main class="login-container">
+      <h1>Rusty Brown's</h1>
+      <img src="assets/logo.webp" alt="Rusty Brown's Logo" class="logo" />
+      <h2 class="tagline">Please login.</h2>
 
-      <footer>
-        <blockquote lang="portuguese">
-          <p>Todos os direitos reservados.</p>
-        </blockquote>
-      </footer>
-    </div>
-  </body>
+      <form action="/login" method="post" class="login-form">
+        <input id="email" name="u" type="text" placeholder="username" />
+        <input id="tok" name="t" type="password" placeholder="Secret Cipher" />
+        <label for="email"> username </label>
+        <label for="tok"> password </label>
+      </form>
+      <button class="submitBtn"><a href="/pages/about.html">Start</a></button>
+
+      <p class="disclaimer">
+        You will be logged out after 24 hours of inactivity.
+      </p>
+    </main>
+
+    <footer>
+      <blockquote lang="pt">
+        <p>Todos os direitos reservados.</p>
+      </blockquote>
+    </footer>
+  </div>
+</body>
+
 </html>
